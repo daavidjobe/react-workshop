@@ -14,7 +14,7 @@ class TodoForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    if(this.refs.input.value > 0) {
+    if(this.refs.input.value.length > 0) {
       this.props.add(this.refs.input.value);
       this.refs.input.value = '';
     }

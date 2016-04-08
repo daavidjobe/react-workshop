@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import {Router, Route, browserHistory, Link} from  'react-router';
 import TodoList from './components/todolist/TodoList';
 
-
 const Home = (props) => {
   return (
       <div>
@@ -12,11 +11,11 @@ const Home = (props) => {
         {props.children}
       </div>
   );
-}
+};
 
 const About = () => {
   return <h1>About</h1>
-}
+};
 
 class App extends React.Component {
 
@@ -27,7 +26,7 @@ class App extends React.Component {
     }
   }
 
-  
+
   handleClick() {
     this.setState({message: 'hello again!'});
   }

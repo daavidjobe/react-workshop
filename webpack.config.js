@@ -1,8 +1,8 @@
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: '/',
-    filename: 'bundle.js'
+    path: './',
+    filename: 'target/bundle.js'
   },
   devServer: {
     inline: true,
@@ -17,6 +17,10 @@ module.exports = {
           query: {
               presets: ['react', 'es2015']
           }
+      },
+      {
+        test: /\.less$/,
+        loader: "style!css!less"
       }
     ]
   }
